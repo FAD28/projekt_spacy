@@ -15,12 +15,12 @@ import csv
 from tqdm import tqdm
 import networkx as nx
 import numpy as np
+import os
 rklinger = Emotionen_rklinger()
 
 now = datetime.datetime.now()
 date = now.strftime("%d-%m-%Y") 
 
-rawtext = ['Die Katze fängt den Hund.','Die Lilly hatte sex mit ihrem behinderten Freund.', 'Fabian hat die Szene gefickt.','Es ist nicht so leicht der beste zu sein.']
 testtext = ['Türkische Soldaten sterben durch Luftangriffe in Idlib','Die türkische Regierung hat nach dem Tod mehrerer Soldaten eine Sondersitzung einberufen.', 'Unklar war zunächst ob die Attacke von Russland oder Syrien ausging.']
 
 nlp = spacy.load('de')
