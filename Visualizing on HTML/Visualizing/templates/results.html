@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data</title>
+</head>
+<body>
+	<h1> Der NRC Lexicon </h1>
+	<li>
+		<a href="/analysis"> Analysis -> Klick mich </a>
+	<li>
+		<a href="/main"> Zurück zur Startseite -> Klick mich </a>
+	</li>
+	{% for item in liste %}
+	<p> {{ item }} </p> 
+	<!-- {% if item.startswith("a")%} -->
+	<!-- {% else %} -->
+	<!-- {%endif%} -->
+	{% endfor %}
+		<p> Die Anzahl der Items beträgt: {{ liste|length }} </p>
+</body>
+</html>

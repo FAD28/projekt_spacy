@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+	<title>
+		{{ title }} Webseite
+	</title>
+	{% else %}
+	<title>
+		Fabian Dittrichs Analysen
+	</title>
+	{% endif %}
+</head>
+<body>
+	<h1> Willkommen in Fabians Emotion Analysis </h1>
+	{% if login_name %}
+	<p> {{login_name}} </p>
+	{%else%}
+	<p> Bitte melden Sie sich an! --> <a href="/login"> Anmelden</a> </p>
+	{%endif%}
+	<li>
+		<a href="/results"> Results -> Klick mich </a>
+	<li>
+		<a href="/analysis"> Analysis -> Klick mich </a>
+	</li>
+	
+</body>
+</html>
