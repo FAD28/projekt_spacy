@@ -19,6 +19,7 @@ import os
 rklinger = Emotionen_rklinger()
 print(" Start rklinger ")
 now = datetime.datetime.now()
+date = now.strftime("%d-%m-%Y")
 
 testtext = ['Türkische Soldaten sterben durch Luftangriffe in Idlib','Die türkische Regierung hat nach dem Tod mehrerer Soldaten eine Sondersitzung einberufen.', 'Unklar war zunächst ob die Attacke von Russland oder Syrien ausging.']
 
